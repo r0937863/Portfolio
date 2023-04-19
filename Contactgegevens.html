@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" sizes="32x32"  href="Afbeeldingen Portfolio/favicon-32x32.png">
     <title>Document</title>
 </head>
 <style>
@@ -56,36 +57,42 @@
 <h2>Gegevens</h2>
 <a href="mailto:vincent.quesada@gmail.com" style="color: black;">vincent.quesada@gmail.com</a> </a>
 <p>
-    <a href="http://www.google.be" style="color: black;">linkin</a>
+    <a href="https://www.linkedin.com/in/vincent-quesada-19978826a/" style="color: black;">linkin</a>
     </p>
 <h2>Laat u horen.</h2>
 <p>U kan altijd eventueel een vraag stellen via onderstaand formulier:</p>
+
 <div>
-    <label for="Naam">Naam:
-        <input type="text" id="naam" name="naam" required>
-    </label>
+    <form method="post" action="https://tm-statweb.be/sendmail.php">
+        <input type="hidden" name="studentemail" value="vincent_quesada@hotmail.com">
+
+        <div>
+            <label for="Naam">Naam</label>
+            <input type="text" name="Naam" id="Naam">
+        </div>
+
+        <div>
+            <label for="E-mail">E-mail</label>
+            <input type="email" name="email" id="E-mail">
+        </div>
+        <div>
+            <label for="Onderwerp">Onderwerp</label>
+            <input type="text" name="Onderwerp" id="Onderwerp">
+        </div>
+        <div>
+            <p></p><label for="Vragen">Vragen:</label></p>
+            <textarea name="Vragen" id="Vragen" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Versturen">
+        </div>
+    </form>
 </div>
 <div>
-    <label for="E-mail">Email:
-        <input type="email" id="mail" name="mail" required>
-    </label>
-</div>
-<div>
-    <label for="Onderwerp">Onderwerp:
-        <input type="text" id="onderwerp" name="onderwerp" required
-    </label>
-</div>
-<div>
-    <label for="link"><Link>www.thomasmore.be</Link></label>
-</div>
-<div>
-    <label for="Tekstveld">Tekstveld:
-    </label>
-    <br>
-    <textarea id="tekstveld" name="tekstveld" rows="4" cols="50">
-        Plaats hier uw text:
-    </textarea>
-</div>
-    
+    <center>
+    <img src="Afbeeldingen Portfolio/contact.jpg" alt="contact" width="200" height="200">
+</center>
+    </div>
+
 </body>
 </html>
